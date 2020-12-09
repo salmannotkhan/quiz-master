@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Andika New Basic', sans-serif;
+}
+
+body, html {
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form.category_selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form.category_selection select {
+  margin: 15px;
+}
+
+form.category_selection button {
+  padding: 10px;
+}
+
+h1 {
+  padding: 50px;
+}
+
+.result {
+  text-align: center;
+}
+
+.question-box {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.question-box .question {
+  padding: 10px;
+  margin: 10px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.question-box .answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.question-box .answers div {
+  padding: 15px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.question-box button {
+  margin: 10px;
+  padding: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.loading {
+  padding: 10px;
+  border: 5px solid lightblue;
+  border-radius: 30%;
+  -webkit-animation: glow 2s ease-in-out infinite;
+          animation: glow 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes glow {
+  10% {
+    -webkit-box-shadow: 1px 1px 5px lightblue, -1px -1px 5px lightblue;
+            box-shadow: 1px 1px 5px lightblue, -1px -1px 5px lightblue;
+  }
+  50% {
+    -webkit-box-shadow: 10px 1px 5px lightblue, -10px -1px 5px lightblue;
+            box-shadow: 10px 1px 5px lightblue, -10px -1px 5px lightblue;
+  }
+  100% {
+    -webkit-box-shadow: 1px 1px 5px lightblue, -1px -1px 5px lightblue;
+            box-shadow: 1px 1px 5px lightblue, -1px -1px 5px lightblue;
+  }
+}
+
+@keyframes glow {
+  10% {
+    -webkit-box-shadow: 1px 1px 5px lightblue, -1px -1px 5px lightblue;
+            box-shadow: 1px 1px 5px lightblue, -1px -1px 5px lightblue;
+  }
+  50% {
+    -webkit-box-shadow: 10px 1px 5px lightblue, -10px -1px 5px lightblue;
+            box-shadow: 10px 1px 5px lightblue, -10px -1px 5px lightblue;
+  }
+  100% {
+    -webkit-box-shadow: 1px 1px 5px lightblue, -1px -1px 5px lightblue;
+            box-shadow: 1px 1px 5px lightblue, -1px -1px 5px lightblue;
+  }
+}
+/*# sourceMappingURL=main.css.map */

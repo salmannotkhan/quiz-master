@@ -42,7 +42,6 @@ cate_form.addEventListener("submit", (e) => {
         resp = xhr.response
         if (resp.response_code == 0){
             q_list = resp.results
-            console.log(q_list)
             newQuestion(q_count)
         }
     }
@@ -69,6 +68,7 @@ function newQuestion(q_count) {
     }
     question_box.appendChild(question)
     question_box.appendChild(answers)
+    nextBtn.disabled = true
     question_box.appendChild(nextBtn)
 }
 
@@ -113,5 +113,6 @@ function checkAnswer() {
         this.style.backgroundColor = "red"
         wrong += 1
     }
+    nextBtn.disabled = false
     answers.style.pointerEvents = "none"
 }
